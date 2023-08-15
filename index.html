@@ -21,8 +21,8 @@
     <body>
         <div class="head">
             <div class="headShaddow"></div>
-            <div class="container mainMenu">
-                <div class="row">
+            <div class="container">
+                <div class="row mainMenu">
                     <div class="col-5 mainMenu__left">
                         <ul>
                             <li><a href="#" class="active">Home</a></li>
@@ -32,7 +32,9 @@
                         </ul>
                     </div>
                     <div class="col-2 mainMenu__logo">
-                        <img src="assets/logo.png" alt="">
+                        <a href="/">
+                            <img src="assets/logo.png" alt="">
+                        </a>
                     </div>
                     <div class="col-5 mainMenu__right">
                         <ul>
@@ -46,7 +48,7 @@
                 <div class="row">
                     <div class="col-10 offset-1">
                         <div class="mainTitle">
-                            <h1><span>Marbella</span> Property Advisors</h1>
+                            <h1><span>Marbella</span> Property<br>Advisors</h1>
                             <p>Enjoy life in the way we all secretly dream about</p>
                         </div>
                         <div id="search">
@@ -56,28 +58,37 @@
                                 <li><a href="#sell">SELL</a></li>
                             </ul>
                             <div id="rent">
-                                <form action="/" class="container">
+                                <form action="/" class="container search">
                                     <div class="row">
                                         <div class="col-3">
-                                            <select name="location">
-                                                <option value="">Select Your City</option>
-                                                <option value="">Cluj-Napoca</option>
-                                            </select>
+                                            <p class="search__title">Location</p>
+                                            <label class="search__label search__label--location">
+                                                <select class="search__select" name="location">
+                                                    <option value="">Select Your City</option>
+                                                    <option value="">Cluj-Napoca</option>
+                                                </select>
+                                            </label>
                                         </div>
                                         <div class="col-4">
-                                            <select name="property">
-                                                <option value="">Property type</option>
-                                                <option value="">House</option>
-                                            </select>
+                                            <p class="search__title">Property Type</p>
+                                            <label class="search__label">
+                                                <select class="search__select" name="property">
+                                                    <option value="">Choose Property Type</option>
+                                                    <option value="">House</option>
+                                                </select>
+                                            </label>
                                         </div>
                                         <div class="col-4">
-                                            <select name="price">
-                                                <option value="">Choose Price Range</option>
-                                                <option value="">Between 100k - 150k</option>
-                                            </select>
+                                            <p class="search__title">Price Range</p>
+                                            <label class="search__label">
+                                                <select class="search__select" name="price">
+                                                    <option value="">Choose Price Range</option>
+                                                    <option value="">Between 100k - 150k</option>
+                                                </select>
+                                            </label>
                                         </div>
                                         <div class="col-1">
-                                            <button>
+                                            <button class="search__button">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </button>
                                         </div>
@@ -85,12 +96,16 @@
                                 </form>
                             </div>
                             <div id="buy">
-                                <!-- buy -->
-                                <i>buy design missing</i>
+                                <form action="/" class="container search search--rounded">
+                                    <!-- buy -->
+                                    <i>buy design missing</i>
+                                </form>
                             </div>
                             <div id="sell">
-                                <!-- sell -->
-                                <i>sell design missing</i>
+                                <form action="/" class="container search search--rounded">
+                                    <!-- sell -->
+                                    <i>sell design missing</i>
+                                </form>
                             </div>
                         </div>
                     </div>
