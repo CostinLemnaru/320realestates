@@ -1,3 +1,101 @@
 <html>
-    
+    <head>
+        <title>320 Real Estates</title>
+        <!-- css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+              $("#search").tabs();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="head">
+            <div class="headShaddow"></div>
+            <div class="container mainMenu">
+                <div class="row">
+                    <div class="col-5 mainMenu__left">
+                        <ul>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Properties</a></li>
+                            <li><a href="#">Honest View</a></li>
+                            <li><a href="#">Golden Visa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2 mainMenu__logo">
+                        <img src="assets/logo.png" alt="">
+                    </div>
+                    <div class="col-5 mainMenu__right">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#" class="focused">My Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="mainTitle">
+                            <h1><span>Marbella</span> Property Advisors</h1>
+                            <p>Enjoy life in the way we all secretly dream about</p>
+                        </div>
+                        <div id="search">
+                            <ul>
+                                <li><a href="#rent">RENT</a></li>
+                                <li><a href="#buy">BUY</a></li>
+                                <li><a href="#sell">SELL</a></li>
+                            </ul>
+                            <div id="rent">
+                                <form action="/" class="container">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <select name="location">
+                                                <option value="">Select Your City</option>
+                                                <option value="">Cluj-Napoca</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select name="property">
+                                                <option value="">Property type</option>
+                                                <option value="">House</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select name="price">
+                                                <option value="">Choose Price Range</option>
+                                                <option value="">Between 100k - 150k</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-1">
+                                            <button>
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="buy">
+                                <!-- buy -->
+                                <i>buy design missing</i>
+                            </div>
+                            <div id="sell">
+                                <!-- sell -->
+                                <i>sell design missing</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

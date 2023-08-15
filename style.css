@@ -1,0 +1,62 @@
+.head {
+    height: 850px;
+    background: url('assets/img1.png');
+    background-size: cover;
+    background-position: center center;
+}
+.headShaddow {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    height: 300px;
+    position: absolute;
+}
+.mainMenu {
+    position: relative;
+}
+.mainMenu ul {
+    list-style: none;
+    margin-top: 60px;
+}
+.mainMenu ul li {
+    display: inline-block;
+}
+.mainMenu ul li a {
+    font-size: 14px;
+    color: #E5E1D5;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.mainMenu ul li a.active {
+    position: relative;
+}
+.mainMenu ul li a.active::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #E0C389;
+    position: absolute;
+    border-radius: 100%;
+    left: 48%;
+    bottom: -8px;
+}
+.mainMenu ul li a.focused {
+    border-bottom: 2px solid #E0C389;
+    color: #E0C389
+}
+.mainMenu__left li {
+    padding-right: 2.5vw;
+}
+.mainMenu__right li {
+    padding-left: 2.5vw;
+}
+.mainMenu__left li:last-child,
+.mainMenu__right li:first-child {
+    padding: 0;
+}
+.mainMenu__logo {
+    margin-top: 30px;
+}
+.mainMenu__logo img {
+    display: block;
+    margin: 0 auto;
+}
