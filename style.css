@@ -207,10 +207,15 @@
 }
 .section__text {
     color: #888374;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.section__text--uppercase {
     text-transform: uppercase;
+}
+.section__text--airy {
     font-size: 20px;
     line-height: 36px;
-    margin-bottom: 40px;
 }
 .section__button {
     font-family: 'Poppins', sans-serif;
@@ -227,6 +232,14 @@
     color: #FFFFFF;
     background: #888374;
 }
+.section__button i {
+    font-size: 16px;
+    margin-left: 5px;
+}
+.section__image {
+    background-size: cover;
+    background-position: center center;
+}
 .section--gray {
     background: #F3F3F3;
 }
@@ -237,8 +250,13 @@
     color: #888374;
     background: transparent;
 }
+.section__content {
+    padding: 50px;
+}
 .centerModeSlider {
-    height: 500px;
+    height: 515px;
+    overflow: hidden;
+    padding: 15px 0;
 }
 .centerModeSlide__image {
     margin: 0 10px;
