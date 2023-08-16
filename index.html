@@ -8,10 +8,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <!-- js -->
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script>
             $(function() {
               $("#search").tabs();
@@ -123,7 +125,60 @@
                     </div>
                 </div>
             </div>
-            
         </div>
+
+        <div class="section section--gray section--center">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-1 col-10">
+                        <h1 class="section__title">320Estates New Developments</h1>
+                        <p class="section__text">The South Coast of Spain and particularly Marbella offers a unique combination of attributes, unsurpassed by any other place on the whole Mediterranean seashores.</p>
+                        <button class="section__button section__button--naked">All Properties</button>
+                    </div>
+                </div>
+            </div>
+            <div class="centerModeSlider">
+                <div class="centerModeSlide">
+                    <div class="centerModeSlide__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');">
+                        <div class="headShaddow headShaddow--reversed"></div>
+                        <div class="centerModeSlide__text">
+                            <p class="centerModeSlide__price">890,000 EUR</p>
+                            <p class="centerModeSlide__location">BAHIA DE MARBELLA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerModeSlide">
+                    <div class="centerModeSlide__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');">
+                        <div class="headShaddow headShaddow--reversed"></div>
+                        <div class="centerModeSlide__text">
+                            <p class="centerModeSlide__price">890,000 EUR</p>
+                            <p class="centerModeSlide__location">BAHIA DE MARBELLA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerModeSlide">
+                    <div class="centerModeSlide__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');">
+                        <div class="headShaddow headShaddow--reversed"></div>
+                        <div class="centerModeSlide__text">
+                            <p class="centerModeSlide__price">890,000 EUR</p>
+                            <p class="centerModeSlide__location">BAHIA DE MARBELLA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('.centerModeSlider').slick({
+                    centerMode: true,
+                    centerPadding: '180px',
+                    slidesToShow: 1,
+                    infinite: false,
+                    dots: false,
+                    arrows: false,
+                    initialSlide: 1
+                });
+            });
+        </script>
     </body>
 </html>
