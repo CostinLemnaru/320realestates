@@ -323,16 +323,48 @@
             </div>
         </div>
 
+        <div class="section section--center section--boxed no-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section__title">Let Us Help You</h1>
+                    </div>
+                </div>
+                <div class="row section__box pt-5 pb-5">
+                    <div class="col-4 offset-1">
+                        <h1 class="section__title mb-0">Tailor made assistance for <span style="color: black;">your unique needs</span></h1>
+                    </div>
+                    <div class="col-5">
+                        <div class="section__box-content">
+                            <h5 class="section__box-title mt-2">Are you in a hurry? Or is your request super specific?</h5>
+                            <p class="section__box-text mt-2">If you prefer to obtain a personalized list of custom options you can choose from before making your move just fill in the custom support form based on your wishes and let us select the most relevant and attractive locations for you!</p>
+                            <a href="#">
+                                <button class="btn2 btn2--reversed mt-2">Guide Me</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script>
             $(document).ready(function(){
                 $('.centerModeSlider').slick({
                     centerMode: true,
                     centerPadding: '180px',
-                    slidesToShow: 1,
+                    slidesToShow: 3,
                     infinite: false,
                     dots: false,
                     arrows: false,
-                    initialSlide: 1
+                    initialSlide: 1,
+                    responsive: [
+                        {
+                            breakpoint: 1440,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
                 });
             });
         </script>

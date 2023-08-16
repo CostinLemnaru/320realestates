@@ -256,6 +256,9 @@
 .section__content {
     padding: 50px;
 }
+.centerModeSlide {
+    max-width: 1040px;
+}
 .centerModeSlider {
     height: 515px;
     overflow: hidden;
@@ -271,6 +274,12 @@
     border: 5px solid white;
     border-radius: 5px;
     filter: drop-shadow(0px 5px 5px #00000038);
+}
+@media (min-width: 1440px) {
+    .centerModeSlide__image {
+        height: 100%;
+        margin-top: 0;
+    }
 }
 .centerModeSlide.slick-current .centerModeSlide__image {
     height: 100%;
@@ -335,7 +344,7 @@
     border-radius: 0;
     border: 1px solid #888374;
     color: #888374;
-    min-width: 200px;
+    width: 380px;
     height: 40px;
 }
 .btn2:hover {
@@ -369,4 +378,19 @@
 .property__bath {
     border-left: 1px solid #DEDCDA;
     border-right: 1px solid #DEDCDA;
+}
+.section__box {
+    text-align: left;
+    background-color: #F5F5F5;
+    border-radius: 65px;
+}
+.section__box > div:first-child {
+    border-right: 1px solid #888374;
+}
+.section__box-content {
+    padding-left: 40px;
+    color: #888374;
+}
+.section__box-title {
+    font-family: 'Leotaro Free', sans-serif;
 }
