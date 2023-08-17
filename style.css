@@ -196,8 +196,9 @@
 .section {
     padding: 70px 0;
 }
-.no-padding {
-    padding: 0;
+.section--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .section--center {
     text-align: center;
@@ -306,33 +307,38 @@
     font-size: 16px;
     margin: 0;
 }
-.property {
+.article {
     width: 100%;
     border: 1px solid #DEDCDA;
-    padding: 15px;
+    padding: 10px;
 }
-.property__image {
+.article__image {
     height: 260px;
     background-size: cover;
     background-position: center center;
 }
-.property__title {
+.article__title {
     font-family: 'Poppins', sans-serif;
     color: #1F2744;
     font-size: 24px;
     line-height: 32px;
 }
-.property__location {
+.article__location {
     font-size: 16px;
     color: #A6A6A6;
     font-weight: 100;
 }
-.property__price {
+.article__text {
+    font-size: 14px;
+    color: #A6A6A6;
+    font-weight: 100;
+}
+.article__price {
     font-family: 'Poppins', sans-serif;
     color: #888374;
     font-size: 24px;
 }
-.property__wishlist {
+.article__wishlist {
     float: right;
     border: none;
     background: transparent;
@@ -360,28 +366,25 @@
     border: 1px solid #888374;
     color: #888374;
 }
-.btn2--small {
-    width: 200px;
-}
 .full-width {
     width: 100%;
 }
-.property__button {
+.article__button {
     width: 100%;
 }
-.property__details {
+.article__details {
     border: 1px solid #DEDCDA;
     border-radius: 5px;
     font-size: 14px;
 }
-.property__details span {
+.article__details span {
     display: inline-block;
     width: 32%;
     line-height: 35px;
     text-align: center;
     color: #888374;
 }
-.property__bath {
+.article__bath {
     border-left: 1px solid #DEDCDA;
     border-right: 1px solid #DEDCDA;
 }
@@ -389,6 +392,9 @@
     text-align: left;
     background-color: #F5F5F5;
     border-radius: 65px;
+    /* this might be canceled on mobile */
+    margin-left: 0;
+    margin-right: 0;
 }
 .section__box > div:first-child {
     border-right: 1px solid #888374;
@@ -453,4 +459,16 @@
 }
 .articleInfo__readTime {
     color: #888374;
+}
+.article__content {
+    background: #f4f4f4;
+    padding: 25px;
+}
+.article--blog .article__title {
+    font-family: 'Leotaro Free', sans-serif;
+    color: #888374;
+    font-size: 24px;
+}
+.btn2--small {
+    width: 180px;
 }
