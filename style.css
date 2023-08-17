@@ -360,6 +360,9 @@
     border: 1px solid #888374;
     color: #888374;
 }
+.full-width {
+    width: 100%;
+}
 .property__button {
     width: 100%;
 }
@@ -393,4 +396,27 @@
 }
 .section__box-title {
     font-family: 'Leotaro Free', sans-serif;
+}
+.section__table tr svg,
+.section__table tr p {
+    display: inline-block;
+}
+.section__table {
+    color: #888374;
+}
+.section__table tr {
+    border-bottom: 1px solid #888374;
+    height: 110px;
+}
+.section__table tr:hover {
+    background-color: #F4F4F4;
+}
+.section__table tr:last-child {
+    border-bottom: none;
+}
+.section__table tr p {
+    width: 75%;
+}
+.section__table tr svg {
+    width: 15%;
 }
