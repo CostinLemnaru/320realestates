@@ -52,6 +52,10 @@
     border-bottom: 2px solid #E0C389;
     color: #E0C389
 }
+.mainMenu ul li a.focused:hover {
+    transition: all 0.2s ease;
+    padding-bottom: 2px;
+}
 .mainMenu__left li {
     padding-right: 2.5vw;
 }
@@ -551,4 +555,52 @@
     padding-top: 30px;
     padding-bottom: 40px;
     color: #ffffff80;
+}
+.btn1, .btn2 {
+    max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .mainMenu__left li {
+        padding-right: 1vw;
+    }
+    .mainMenu__right li {
+        padding-left: 1vw;
+    }
+}
+@media (max-width: 991px) {
+    .mainMenu__logo img {
+        max-width: 100%;
+    }
+    .mainMenu ul {
+        padding: 0;
+    }
+    .mainMenu__left {
+        text-align: right;
+    }
+    .mainMenu__right li {
+        padding-left: 9px;
+    }
+    .mainMenu__logo {
+        margin-top: 55px;
+    }
+    .search__button {
+        max-width: 100%;
+        float: right;
+    }
+    .article__details {
+        font-size: 12px;
+    }
+    .section__title {
+        font-size: 40px;
+    }
+    .section__table tr p {
+        margin-bottom: 0;
+    }
+    .section__table tr svg {
+        margin-top: -23px;
+    }
+    .section__box--square .section__content {
+        padding: 6vw;
+    }
 }
