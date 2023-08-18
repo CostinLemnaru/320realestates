@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>320 Real Estates</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- css -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
@@ -25,7 +26,8 @@
             <div class="headShaddow"></div>
             <div class="container">
                 <div class="row mainMenu">
-                    <div class="col-6 col-lg-5 order-2 order-lg-1 mainMenu__left">
+                    <div class="mainMenu__bg"></div>
+                    <div class="col-12 col-md-6 col-lg-5 order-3 order-md-2 order-lg-1 mainMenu__left">
                         <ul>
                             <li><a href="#" class="active">Home</a></li>
                             <li><a href="#">Properties</a></li>
@@ -33,18 +35,24 @@
                             <li><a href="#">Golden Visa</a></li>
                         </ul>
                     </div>
-                    <div class="col-1 col-lg-2 order-1 order-lg-2 mainMenu__logo">
+                    <div class="col-4 col-md-1 col-lg-2 order-1 order-md-1 order-lg-2 mainMenu__logo">
                         <a href="/">
                             <img src="assets/logo.png" alt="">
                         </a>
                     </div>
-                    <div class="col-5 col-lg-5 order-3 order-lg-3 mainMenu__right">
+                    <div class="col-12 col-md-5 col-lg-5 order-4 order-md-3 order-lg-3 mainMenu__right">
                         <ul>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">About us</a></li>
                             <li><a href="#">Contact</a></li>
                             <li><a href="#" class="focused">My Account</a></li>
                         </ul>
+                    </div>
+                    <div class="col-6 d-block d-md-none order-2">
+                        <button class="hamburger hamburger--closed">
+                            <i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
                     </div>
                 </div>
                 <div class="row">
@@ -62,7 +70,7 @@
                             <div id="rent">
                                 <form action="/" class="container search">
                                     <div class="row">
-                                        <div class="col-3">
+                                        <div class="col-12 col-md-3">
                                             <p class="search__title">Location</p>
                                             <label class="search__label search__label--location">
                                                 <select class="search__select" name="location">
@@ -71,7 +79,7 @@
                                                 </select>
                                             </label>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-12 col-md-4">
                                             <p class="search__title">Property Type</p>
                                             <label class="search__label">
                                                 <select class="search__select" name="property">
@@ -80,7 +88,7 @@
                                                 </select>
                                             </label>
                                         </div>
-                                        <div class="col-3 col-lg-4">
+                                        <div class="col-12 col-md-3 col-lg-4">
                                             <p class="search__title">Price Range</p>
                                             <label class="search__label">
                                                 <select class="search__select" name="price">
@@ -89,7 +97,7 @@
                                                 </select>
                                             </label>
                                         </div>
-                                        <div class="col-2 col-lg-1">
+                                        <div class="col-12 col-md-2 col-lg-1">
                                             <button class="search__button">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </button>
@@ -104,7 +112,7 @@
                                 </form>
                             </div>
                             <div id="sell">
-                                <form action="/" class="container search search--rounded">
+                                <form action="/" class="container search search--rounded serach--right-squared">
                                     <!-- sell -->
                                     <i>sell design missing</i>
                                 </form>
@@ -331,10 +339,10 @@
                     </div>
                 </div>
                 <div class="row section__box pt-5 pb-5">
-                    <div class="col-4 offset-1">
+                    <div class="col-12 col-md-4 offset-md-1">
                         <h1 class="section__title mb-0">Tailor made assistance for <span style="color: black;">your unique needs</span></h1>
                     </div>
-                    <div class="col-5">
+                    <div class="col-12 col-md-5">
                         <div class="section__box-content">
                             <h5 class="section__box-title mt-2">Are you in a hurry? Or is your request super specific?</h5>
                             <p class="section__box-text mt-2">If you prefer to obtain a personalized list of custom options you can choose from before making your move just fill in the custom support form based on your wishes and let us select the most relevant and attractive locations for you!</p>
@@ -356,7 +364,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <table class="section__table mb-4 full-width">
                             <tr>
                                 <td>
@@ -1024,8 +1032,8 @@
                         </table>
                         <button class="btn2 btn2--reversed full-width">Find Out More</button>
                     </div>
-                    <div class="col-6">
-                        <img src="assets/Mask group.png" alt="">
+                    <div class="col-12 col-md-6">
+                        <img src="assets/Mask group.png" class="mt-4 mt-md-0" alt="">
                     </div>
                 </div>
             </div>
@@ -1120,24 +1128,25 @@
                     <div class="col-12">
                         <div class="container">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-6 col-12 mb-5 mb-md-0">
                                     <h1 class="section__title mb-2">Did You Find<br>Your <span style="color: black;">Dream<br>Home?</span></h1>
                                     <p class="footer__info">Contact an expert today!</p>
                                     <p class="footer__info">We always aim to reply within 24 hours.</p>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6 col-12">
                                     <form action="/" method="post" id="contact" class="row">
-                                        <div class="col-6">
+                                        <div class="col-12 col-md-6">
                                             <input type="text" name="name" placeholder="Your Name">
                                             <input type="text" name="phone" placeholder="Phone Number">
                                             <input type="text" name="message" placeholder="Message">
-                                            <button class="btn2 btn2--dark btn2--small">Submit</button>
+                                            <button class="btn2 btn2--dark btn2--small d-md-block d-none">Submit</button>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-12 col-md-6">
                                             <input type="email" name="email" placeholder="Your Email">
                                             <select name="interested">
                                                 <option value="">Interested in</option>
                                             </select>
+                                            <button class="btn2 btn2--dark btn2--small d-block d-md-none">Submit</button>
                                         </div>
                                     </form>
                                 </div>
@@ -1151,10 +1160,10 @@
                     <div class="col-12">
                         <div class="container">
                             <div class="row">
-                                <div class="col-3">
-                                    <img src="assets/logo.png" alt="320RealEstates">
+                                <div class="col-12 col-md-3">
+                                    <img src="assets/logo.png" alt="320RealEstates" class="footer__logo">
                                 </div>
-                                <div class="col-2 footer__column">
+                                <div class="col-2 d-md-block d-none footer__column">
                                     <h6>Properties</h6>
                                     <ul>
                                         <li><a href="#">Marbella</a></li>
@@ -1165,7 +1174,7 @@
                                         <li><a href="#">Marbella</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-2 footer__column">
+                                <div class="col-2 d-md-block d-none footer__column">
                                     <h6>About us</h6>
                                     <ul>
                                         <li><a href="#">Marbella</a></li>
@@ -1176,7 +1185,7 @@
                                         <li><a href="#">Marbella</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-2 footer__column">
+                                <div class="col-2 d-md-block d-none footer__column">
                                     <h6>Contact us</h6>
                                     <ul>
                                         <li>Urb. Monte Paraiso Country Club, 4/2, 29602 Marbella</li>
@@ -1187,7 +1196,7 @@
                                         <li>hola@320estates.com</li>
                                     </ul>
                                 </div>
-                                <div class="col-3 footer__column footer__column--social">
+                                <div class="col-3 d-md-block d-none footer__column footer__column--social">
                                     <h6>Follow us</h6>
                                     <ul>
                                         <li><a href="#">Instagram</a></li>
@@ -1214,6 +1223,13 @@
 
         <script>
             $(document).ready(function(){
+                $('.hamburger').on('click', function() {
+                    $('.hamburger').toggleClass('hamburger--closed');
+                    $('.mainMenu').toggleClass('mainMenu--mobile-active');
+                    $('.mainMenu__bg').toggleClass('mainMenu__bg--active');
+                    $('body').toggleClass('stopScrolling');
+                });
+
                 $('.centerModeSlider').slick({
                     centerMode: true,
                     centerPadding: '180px',
@@ -1228,6 +1244,14 @@
                             settings: {
                                 slidesToShow: 1,
                                 initialSlide: 1
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                initialSlide: 0,
+                                centerPadding: '20px'
                             }
                         }
                     ]

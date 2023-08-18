@@ -559,6 +559,12 @@
 .btn1, .btn2 {
     max-width: 100%;
 }
+.mainMenu__bg {
+    display: none;
+}
+.section img {
+    max-width: 100%;
+}
 
 @media (max-width: 1200px) {
     .mainMenu__left li {
@@ -602,5 +608,168 @@
     }
     .section__box--square .section__content {
         padding: 6vw;
+    }
+    .search__label--location::after,
+    .search__label::after {
+        opacity: 0;
+    }
+}
+@media (max-width: 768px) {
+    .mainMenu__left {
+        margin-top: 10px;
+    }
+    .mainMenu__left,
+    .mainMenu__right {
+        text-align: right;
+    }
+    .mainMenu ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .mainMenu ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .mainMenu ul li a.active::after {
+        opacity: 0;
+    }
+    .mainMenu ul li a.active {
+        color: #FFF;
+        padding: 4px 40px;
+        background: #E0C389;
+    }
+    .mainMenu ul li a {
+        font-size: 16px;
+    }
+    .mainMenu__logo {
+        margin-top: 25px;
+    }
+    .mainMenu__logo img {
+        margin-left: 20px;
+    }
+    .hamburger {
+        position: absolute;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        background: transparent;
+        color: #e0c389;
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        font-size: 32px;
+    }
+    .hamburger .fa-bars {
+        display: none;
+    }
+    .hamburger--closed .fa-xmark {
+        display: none;
+    }    
+    .hamburger--closed .fa-bars {
+        display: block;
+    }
+    .mainMenu .mainMenu__left,
+    .mainMenu .mainMenu__right {
+        display: none;
+    }
+    .mainMenu--mobile-active .mainMenu__left,
+    .mainMenu--mobile-active .mainMenu__right {
+        display: block;
+        z-index: 10;
+    }
+    .mainMenu--mobile-active .mainMenu__logo a {
+        display: none;
+    }
+    .mainMenu--mobile-active {
+        background: #000000;
+        padding-bottom: 25px;
+        z-index: 20;
+    }
+    .mainMenu__bg--active {
+        height: 100vh;
+        width: 100vw;
+        background: black;
+        position: fixed;
+        display: block;
+        z-index: 2;
+        left: 0;
+    }
+    .stopScrolling {
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+    }
+    .mainTitle {
+        margin-top: 45px;
+    }
+    .mainTitle h1 {
+        font-size: 45px;
+    }
+    #search {
+        margin-top: 45px;
+    }
+    #search ul li.ui-state-active a::after {
+        display: none;
+    }
+    #search ul li {
+        width: 32%;
+        text-align: center;
+    }
+    #search ul li a {
+        padding: 0;
+    }
+    #search ul li:last-child {
+        float: right;
+    }
+    .search__button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .headShaddow {
+        height: 250px;
+    }
+    .serach--right-squared {
+        border-radius: 20px 0px 20px 20px;
+    }
+    .centerModeSlider {
+        height: 430px;
+    }
+    .section__box {
+        border-radius: 0;
+    }
+    .section__box-content {
+        padding-left: 0;
+    }
+    .section__title {
+        font-size: 30px;
+    }
+    .section__box--square .section__title {
+        font-size: 24px;
+    }
+    .footer__logo {
+        display: block;
+        margin: 0 auto;
+    }
+    .footer__menu {
+        padding-top: 30px;
+    }
+    .footer__info {
+        font-size: 24px;
+    }
+    .footer__form {
+        padding-bottom: 30px;
+    }
+    .footer__form--override {
+        padding-top: 200px;
+    }
+    .footer__form input, .footer__form select {
+        width: 100%;
+    }
+    form .btn2--small {
+        width: 100%;
     }
 }
