@@ -1297,13 +1297,19 @@
 
                 $('.centerModeSlider').slick({
                     centerMode: true,
-                    centerPadding: '180px',
+                    centerPadding: '25vw',
                     slidesToShow: 1,
                     infinite: false,
                     dots: false,
                     arrows: false,
                     initialSlide: 0,
                     responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                centerPadding: '15vw'
+                            }
+                        },
                         {
                             breakpoint: 768,
                             settings: {
