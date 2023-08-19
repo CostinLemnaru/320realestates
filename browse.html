@@ -1,0 +1,593 @@
+<html>
+    <head>
+        <title>320 Real Estates</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $(function() {
+              $("#search").tabs();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="head" style="background-image: url('assets/image_12.png')">
+            <div class="headShaddow"></div>
+            <div class="container">
+                <div class="row mainMenu">
+                    <div class="mainMenu__bg"></div>
+                    <div class="col-12 col-md-6 col-lg-5 order-3 order-md-2 order-lg-1 mainMenu__left">
+                        <ul>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Properties</a></li>
+                            <li><a href="#">Honest View</a></li>
+                            <li><a href="#">Golden Visa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-md-1 col-lg-2 order-1 order-md-1 order-lg-2 mainMenu__logo">
+                        <a href="/">
+                            <img src="assets/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-5 order-4 order-md-3 order-lg-3 mainMenu__right">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#" class="focused">My Account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 d-block d-md-none order-2">
+                        <button class="hamburger hamburger--closed">
+                            <i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="mainTitle mainTitle--center">
+                            <h1>Browse through carefully curated properties in our portfolio</h1>
+                        </div>
+                        <div id="search">
+                            <ul>
+                                <li><a href="#rent">RENT</a></li>
+                                <li><a href="#buy">BUY</a></li>
+                                <li><a href="#sell">SELL</a></li>
+                            </ul>
+                            <div id="rent">
+                                <form action="/" class="container search">
+                                    <div class="row">
+                                        <div class="col-12 col-md-3">
+                                            <p class="search__title">Location</p>
+                                            <label class="search__label search__label--location">
+                                                <select class="search__select" name="location">
+                                                    <option value="">Select Your City</option>
+                                                    <option value="">Marbella</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <p class="search__title">Property Type</p>
+                                            <label class="search__label">
+                                                <select class="search__select" name="property">
+                                                    <option value="">Choose Property Type</option>
+                                                    <option value="">House</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-3 col-lg-4">
+                                            <p class="search__title">Price Range</p>
+                                            <label class="search__label">
+                                                <select class="search__select" name="price">
+                                                    <option value="">Choose Price Range</option>
+                                                    <option value="">Between 100k - 150k</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-2 col-lg-1">
+                                            <button class="search__button">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="buy">
+                                <form action="/" class="container search search--rounded">
+                                    <div class="row">
+                                        <div class="col-12 col-md-3">
+                                            <p class="search__title">Location buy</p>
+                                            <label class="search__label search__label--location">
+                                                <select class="search__select" name="location">
+                                                    <option value="">Select Your City</option>
+                                                    <option value="">Marbella</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <p class="search__title">Property Type buy</p>
+                                            <label class="search__label">
+                                                <select class="search__select" name="property">
+                                                    <option value="">Choose Property Type</option>
+                                                    <option value="">House</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-3 col-lg-4">
+                                            <p class="search__title">Price Range buy</p>
+                                            <label class="search__label">
+                                                <select class="search__select" name="price">
+                                                    <option value="">Choose Price Range</option>
+                                                    <option value="">Between 100k - 150k</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-2 col-lg-1">
+                                            <button class="search__button">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="sell">
+                                <form action="/" class="container search search--rounded search--right-squared">
+                                    <div class="row">
+                                        <div class="col-12 col-md-3">
+                                            <p class="search__title">Location sell</p>
+                                            <label class="search__label search__label--location">
+                                                <select class="search__select" name="location">
+                                                    <option value="">Select Your City </option>
+                                                    <option value="">Marbella</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <p class="search__title">Property Type sell</p>
+                                            <label class="search__label">
+                                                <select class="search__select" name="property">
+                                                    <option value="">Choose Property Type </option>
+                                                    <option value="">House</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-3 col-lg-4">
+                                            <p class="search__title">Price Range sell</p>
+                                            <label class="search__label">
+                                                <select class="search__select" name="price">
+                                                    <option value="">Choose Price Range </option>
+                                                    <option value="">Between 100k - 150k</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-2 col-lg-1">
+                                            <button class="search__button">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section--center">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-1 col-10">
+                        <h1 class="section__title">Property Listing</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="boxIcon boxIcon--active mb-5">
+                            <div class="boxIcon__icon mb-5">
+                                <svg style="margin-top: 5px;" width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.4711 7.61022L21.6266 7.75235L33.2462 18.8821L31.9999 20.118L30.3999 18.5857L30.4008 30.3334C30.4008 31.2468 29.6755 31.9956 28.7555 32.0615L28.6231 32.0667H10.8453C9.90839 32.0667 9.14039 31.3595 9.07195 30.4625L9.0675 30.3334L9.06661 18.5866L7.46839 20.118L6.22217 18.8821L17.8293 7.76362C18.8186 6.77908 20.4142 6.72448 21.4711 7.61022ZM19.1724 8.91368L19.0871 8.98908L10.8444 16.8836L10.8453 30.3334L15.2888 30.3325L15.2897 21.6667C15.2897 20.7532 16.0151 20.0044 16.9351 19.9377L17.0675 19.9334H22.4008C23.3377 19.9334 24.1057 20.6406 24.1742 21.5376L24.1786 21.6667L24.1777 30.3325L28.6231 30.3334L28.6222 16.8827L20.3564 8.96482C20.0328 8.65542 19.5279 8.63635 19.1724 8.91368ZM22.4008 21.6667H17.0675L17.0666 30.3325H22.3999L22.4008 21.6667Z" fill="#F9F7F2"/>
+                                </svg>
+                            </div>
+                            <h4 class="boxIcon__title mb-0">Houses</h4>
+                            <p class="boxIcon__text mb-0">22 Properties</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="boxIcon mb-5">
+                            <div class="boxIcon__icon mb-5">
+                                <svg style="margin-top: 7px;" width="40" height="35" viewBox="0 0 50 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M37.7531 13.5H28.9859V10.5C28.9848 9.97 28.7536 9.461 28.3426 9.086C27.9328 8.712 27.375 8.501 26.7941 8.5H11.4516C10.8707 8.501 10.3129 8.711 9.90196 9.086C9.491 9.461 9.26086 9.97 9.25977 10.5V34.5C9.26086 35.03 9.4921 35.539 9.90196 35.913C10.3129 36.288 10.8707 36.499 11.4516 36.5H37.7531C38.3339 36.499 38.8907 36.288 39.3016 35.913C39.7126 35.538 39.9438 35.03 39.9449 34.5V15.5C39.9438 14.97 39.7126 14.461 39.3016 14.086C38.8918 13.712 38.3339 13.501 37.7531 13.5ZM21.3146 34.5H16.9311V29.5H21.3146V34.5ZM26.7941 34.5H23.5064V29.5C23.5053 28.97 23.2741 28.461 22.8632 28.087C22.4533 27.712 21.8955 27.501 21.3146 27.5H16.9311C16.3502 27.501 15.7924 27.712 15.3815 28.087C14.9716 28.461 14.7404 28.97 14.7393 29.5V34.5H11.4516L11.4505 10.5H26.7941V34.5ZM37.7531 34.5H28.9859V15.5H37.7531V34.5ZM34.4654 22.5C34.4654 22.698 34.4008 22.891 34.2802 23.056C34.1608 23.22 33.9887 23.348 33.7893 23.424C33.5887 23.5 33.3684 23.519 33.1558 23.481C32.9432 23.442 32.7482 23.347 32.5947 23.207C32.4413 23.067 32.3372 22.889 32.2945 22.695C32.2528 22.501 32.2736 22.3 32.3569 22.117C32.4402 21.935 32.5805 21.778 32.7602 21.669C32.941 21.559 33.1525 21.5 33.3695 21.5C33.6599 21.5 33.9394 21.605 34.1443 21.793C34.3504 21.98 34.4654 22.235 34.4654 22.5ZM32.2736 18.5C32.2736 18.302 32.3383 18.109 32.4588 17.944C32.5783 17.78 32.7503 17.652 32.9498 17.576C33.1504 17.5 33.3706 17.481 33.5832 17.519C33.7958 17.558 33.9909 17.653 34.1443 17.793C34.2978 17.933 34.4019 18.111 34.4446 18.305C34.4862 18.499 34.4654 18.7 34.3821 18.883C34.2989 19.065 34.1586 19.222 33.9788 19.331C33.798 19.441 33.5865 19.5 33.3695 19.5C33.0791 19.5 32.7997 19.395 32.5947 19.207C32.3887 19.02 32.2736 18.765 32.2736 18.5ZM23.5064 22.5C23.5064 22.698 23.4418 22.891 23.3212 23.056C23.2018 23.22 23.0297 23.348 22.8303 23.424C22.6297 23.5 22.4095 23.519 22.1968 23.481C21.9842 23.442 21.7892 23.347 21.6357 23.207C21.4823 23.067 21.3782 22.889 21.3355 22.695C21.2938 22.501 21.3146 22.3 21.3979 22.117C21.4812 21.935 21.6215 21.778 21.8012 21.669C21.9821 21.559 22.1936 21.5 22.4105 21.5C22.701 21.5 22.9804 21.605 23.1853 21.793C23.3914 21.98 23.5064 22.235 23.5064 22.5ZM23.5064 18.5C23.5064 18.698 23.4418 18.891 23.3212 19.056C23.2018 19.22 23.0297 19.348 22.8303 19.424C22.6297 19.5 22.4095 19.519 22.1968 19.481C21.9842 19.442 21.7892 19.347 21.6357 19.207C21.4823 19.067 21.3782 18.889 21.3355 18.695C21.2938 18.501 21.3146 18.3 21.3979 18.117C21.4812 17.935 21.6215 17.778 21.8012 17.669C21.9821 17.559 22.1936 17.5 22.4105 17.5C22.701 17.5 22.9804 17.605 23.1853 17.793C23.3914 17.98 23.5064 18.235 23.5064 18.5ZM23.5064 14.5C23.5064 14.698 23.4418 14.891 23.3212 15.056C23.2018 15.22 23.0297 15.348 22.8303 15.424C22.6297 15.5 22.4095 15.519 22.1968 15.481C21.9842 15.442 21.7892 15.347 21.6357 15.207C21.4823 15.067 21.3782 14.889 21.3355 14.695C21.2938 14.501 21.3146 14.3 21.3979 14.117C21.4812 13.935 21.6215 13.778 21.8012 13.669C21.9821 13.559 22.1936 13.5 22.4105 13.5C22.701 13.5 22.9804 13.605 23.1853 13.793C23.3914 13.98 23.5064 14.235 23.5064 14.5ZM16.9311 22.5C16.9311 22.698 16.8664 22.891 16.7458 23.056C16.6264 23.22 16.4543 23.348 16.2549 23.424C16.0543 23.5 15.8341 23.519 15.6215 23.481C15.4089 23.442 15.2138 23.347 15.0604 23.207C14.9069 23.067 14.8028 22.889 14.7601 22.695C14.7184 22.501 14.7393 22.3 14.8225 22.117C14.9058 21.935 15.0461 21.778 15.2258 21.669C15.4067 21.559 15.6182 21.5 15.8352 21.5C16.1256 21.5 16.405 21.605 16.61 21.793C16.816 21.98 16.9311 22.235 16.9311 22.5ZM16.9311 18.5C16.9311 18.698 16.8664 18.891 16.7458 19.056C16.6264 19.22 16.4543 19.348 16.2549 19.424C16.0543 19.5 15.8341 19.519 15.6215 19.481C15.4089 19.442 15.2138 19.347 15.0604 19.207C14.9069 19.067 14.8028 18.889 14.7601 18.695C14.7184 18.501 14.7393 18.3 14.8225 18.117C14.9058 17.935 15.0461 17.778 15.2258 17.669C15.4067 17.559 15.6182 17.5 15.8352 17.5C16.1256 17.5 16.405 17.605 16.61 17.793C16.816 17.98 16.9311 18.235 16.9311 18.5ZM16.9311 14.5C16.9311 14.698 16.8664 14.891 16.7458 15.056C16.6264 15.22 16.4543 15.348 16.2549 15.424C16.0543 15.5 15.8341 15.519 15.6215 15.481C15.4089 15.442 15.2138 15.347 15.0604 15.207C14.9069 15.067 14.8028 14.889 14.7601 14.695C14.7184 14.501 14.7393 14.3 14.8225 14.117C14.9058 13.935 15.0461 13.778 15.2258 13.669C15.4067 13.559 15.6182 13.5 15.8352 13.5C16.1256 13.5 16.405 13.605 16.61 13.793C16.816 13.98 16.9311 14.235 16.9311 14.5Z" fill="#F9F7F2"/>
+                                </svg>
+                            </div>
+                            <h4 class="boxIcon__title mb-0">APARTMENTS</h4>
+                            <p class="boxIcon__text mb-0">22 Properties</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="boxIcon mb-5">
+                            <div class="boxIcon__icon mb-5">
+                                <svg style="margin-top: 11px;" width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.2577 21L25.7457 19.8333V16.9167M18.2819 11.6667L15.794 12.8333L18.2819 11.6667ZM15.794 12.8333L13.3061 11.6667L15.794 12.8333ZM15.794 12.8333V15.75V12.8333ZM25.7457 8.16667L23.2577 9.33333L25.7457 8.16667ZM25.7457 8.16667L23.2577 7L25.7457 8.16667ZM25.7457 8.16667V11.0833V8.16667ZM18.2819 4.66667L15.794 3.5L13.3061 4.66667H18.2819ZM5.84229 8.16667L8.33021 7L5.84229 8.16667ZM5.84229 8.16667L8.33021 9.33333L5.84229 8.16667ZM5.84229 8.16667V11.0833V8.16667ZM15.794 24.5L13.3061 23.3333L15.794 24.5ZM15.794 24.5L18.2819 23.3333L15.794 24.5ZM15.794 24.5V21.5833V24.5ZM8.33021 21L5.84229 19.8333V16.9167L8.33021 21Z" stroke="#F9F7F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 class="boxIcon__title mb-0">new developments</h4>
+                            <p class="boxIcon__text mb-0">22 Properties</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section--center pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section__title">Search results</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-12">
+                        <div class="container">
+                            <div class="col-12">
+                                <div class="browseHead mb-4 mb-md-2">
+                                    <div class="browseHead__left d-inline-block">
+                                        <p class="browseHead__title d-md-inline-block">Sort by</p>
+                                        <label class="search__label d-md-inline-block">
+                                            <select name="price" id="" class="form-control">
+                                                <option value="">Price</option>
+                                            </select>
+                                        </label>
+                                        <label class="search__label d-md-inline-block">
+                                            <select name="date" id="" class="form-control">
+                                                <option value="">Newest</option>
+                                            </select>
+                                        </label>
+                                    </div>
+
+                                    <div class="browseHead__right d-inline-block">
+                                        <a href="#">
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="4.8916" width="12.973" height="3.24324" fill="#D9D9D9"/>
+                                                <rect y="0.0268555" width="12.973" height="3.24324" fill="#D9D9D9"/>
+                                                <rect y="9.75659" width="12.973" height="3.24324" fill="#D9D9D9"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="6" height="6" fill="#888374"/>
+                                                <rect y="7" width="6" height="6" fill="#888374"/>
+                                                <rect x="7" width="6" height="6" fill="#888374"/>
+                                                <rect x="7" y="7" width="6" height="6" fill="#888374"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- articles -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="article article--side mb-4">
+                                        <div class="row g-0 article__wrap">
+                                            <div class="col-md-6 col-12">
+                                                <div class="article__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');"></div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="article__wrap-content">
+                                                    <button class="article__wishlist"><i class="fa-regular fa-heart"></i></button>
+                                                    <h4 class="article__title mb-1 mb-md-3">Marten House</h4>
+                                                    <p class="article__location mb-1 mb-md-3">Logos, Nigeria</p>
+                                                    <div class="article__info mb-2 mb-md-4">
+                                                        <span class="article__price">390.000 &euro;</span>
+                                                    </div>
+                                                    <a href="#">
+                                                        <button class="article__button btn2 btn2--reversed mb-3 mb-md-4">View details</button>
+                                                    </a>
+                                                    <div class="article__details">
+                                                        <span class="article__bedrooms"><i class="fa-solid fa-bed"></i> 2 Bedrooms</span>
+                                                        <span class="article__bath"><i class="fa-solid fa-bath"></i> 3 Bath</span>
+                                                        <span class="article__area">1000 sq ft</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="article article--side mb-4">
+                                        <div class="row g-0 article__wrap">
+                                            <div class="col-md-6 col-12">
+                                                <div class="article__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');"></div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="article__wrap-content">
+                                                    <button class="article__wishlist"><i class="fa-regular fa-heart"></i></button>
+                                                    <h4 class="article__title mb-1 mb-md-3">Marten House</h4>
+                                                    <p class="article__location mb-1 mb-md-3">Logos, Nigeria</p>
+                                                    <div class="article__info mb-2 mb-md-4">
+                                                        <span class="article__price">390.000 &euro;</span>
+                                                    </div>
+                                                    <a href="#">
+                                                        <button class="article__button btn2 btn2--reversed mb-3 mb-md-4">View details</button>
+                                                    </a>
+                                                    <div class="article__details">
+                                                        <span class="article__bedrooms"><i class="fa-solid fa-bed"></i> 2 Bedrooms</span>
+                                                        <span class="article__bath"><i class="fa-solid fa-bath"></i> 3 Bath</span>
+                                                        <span class="article__area">1000 sq ft</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="article article--side mb-4">
+                                        <div class="row g-0 article__wrap">
+                                            <div class="col-md-6 col-12">
+                                                <div class="article__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');"></div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="article__wrap-content">
+                                                    <button class="article__wishlist"><i class="fa-regular fa-heart"></i></button>
+                                                    <h4 class="article__title mb-1 mb-md-3">Marten House</h4>
+                                                    <p class="article__location mb-1 mb-md-3">Logos, Nigeria</p>
+                                                    <div class="article__info mb-2 mb-md-4">
+                                                        <span class="article__price">390.000 &euro;</span>
+                                                    </div>
+                                                    <a href="#">
+                                                        <button class="article__button btn2 btn2--reversed mb-3 mb-md-4">View details</button>
+                                                    </a>
+                                                    <div class="article__details">
+                                                        <span class="article__bedrooms"><i class="fa-solid fa-bed"></i> 2 Bedrooms</span>
+                                                        <span class="article__bath"><i class="fa-solid fa-bath"></i> 3 Bath</span>
+                                                        <span class="article__area">1000 sq ft</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="article article--side mb-4">
+                                        <div class="row g-0 article__wrap">
+                                            <div class="col-md-6 col-12">
+                                                <div class="article__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');"></div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="article__wrap-content">
+                                                    <button class="article__wishlist"><i class="fa-regular fa-heart"></i></button>
+                                                    <h4 class="article__title mb-1 mb-md-3">Marten House</h4>
+                                                    <p class="article__location mb-1 mb-md-3">Logos, Nigeria</p>
+                                                    <div class="article__info mb-2 mb-md-4">
+                                                        <span class="article__price">390.000 &euro;</span>
+                                                    </div>
+                                                    <a href="#">
+                                                        <button class="article__button btn2 btn2--reversed mb-3 mb-md-4">View details</button>
+                                                    </a>
+                                                    <div class="article__details">
+                                                        <span class="article__bedrooms"><i class="fa-solid fa-bed"></i> 2 Bedrooms</span>
+                                                        <span class="article__bath"><i class="fa-solid fa-bath"></i> 3 Bath</span>
+                                                        <span class="article__area">1000 sq ft</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- pagination -->
+                            <div class="row pagination">
+                                <div class="col-12 col-md-8 offset-md-2">
+                                    <ul>
+                                        <li class="pagination__link pagination__prev">
+                                            <a href="">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6.46478 10.9615L1.47119 5.96796L6.46478 0.974368" stroke="#888374" stroke-width="1.8726" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="pagination__link">
+                                            <a href="">1</a>
+                                        </li>
+                                        <li class="pagination__link pagination__link--active">
+                                            <a href="">2</a>
+                                        </li>
+                                        <li class="pagination__link pagination__link--space">
+                                            <span>...</span>
+                                        </li>
+                                        <li class="pagination__link">
+                                            <a href="">7</a>
+                                        </li>
+                                        <li class="pagination__link">
+                                            <a href="">8</a>
+                                        </li>
+                                        <li class="pagination__link pagination__next">
+                                            <a href="">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.77887 0.974365L6.77246 5.96796L1.77887 10.9615" stroke="#888374" stroke-width="1.8726" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section--center section--no-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section__title">Let Us Help You</h1>
+                    </div>
+                </div>
+                <div class="row section__box pt-5 pb-5">
+                    <div class="col-12 col-md-4 offset-md-1">
+                        <h1 class="section__title mb-0">Tailor made assistance for <span style="color: black;">your unique needs</span></h1>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="section__box-content">
+                            <h5 class="section__box-title mt-2">Are you in a hurry? Or is your request super specific?</h5>
+                            <p class="section__box-text mt-2">If you prefer to obtain a personalized list of custom options you can choose from before making your move just fill in the custom support form based on your wishes and let us select the most relevant and attractive locations for you!</p>
+                            <a href="#">
+                                <button class="btn2 btn2--reversed mt-2">Guide Me</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container-fluid footer__form footer__form--override">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-12 mb-5 mb-md-0">
+                                    <h1 class="section__title mb-2">Did You Find<br>Your <span style="color: black;">Dream<br>Home?</span></h1>
+                                    <p class="footer__info">Contact an expert today!</p>
+                                    <p class="footer__info">We always aim to reply within 24 hours.</p>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <form action="/" method="post" id="contact" class="row">
+                                        <div class="col-12 col-md-6">
+                                            <input type="text" name="name" placeholder="Your Name">
+                                            <input type="text" name="phone" placeholder="Phone Number">
+                                            <input type="text" name="message" placeholder="Message">
+                                            <button class="btn2 btn2--dark btn2--small d-md-block d-none">Submit</button>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <input type="email" name="email" placeholder="Your Email">
+                                            <select name="interested">
+                                                <option value="">Interested in</option>
+                                            </select>
+                                            <button class="btn2 btn2--dark btn2--small d-block d-md-none">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer__menu">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <img src="assets/logo.png" alt="320RealEstates" class="footer__logo">
+                                </div>
+                                <div class="col-2 d-md-block d-none footer__column">
+                                    <h6>Properties</h6>
+                                    <ul>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 d-md-block d-none footer__column">
+                                    <h6>About us</h6>
+                                    <ul>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 d-md-block d-none footer__column">
+                                    <h6>Contact us</h6>
+                                    <ul>
+                                        <li>Urb. Monte Paraiso Country Club, 4/2, 29602 Marbella</li>
+                                        <li>Teléfono:</li>
+                                        <li>+34658540533</li>
+                                        <li>+34658540533</li>
+                                        <li></li>
+                                        <li>hola@320estates.com</li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 d-md-block d-none footer__column footer__column--social">
+                                    <h6>Follow us</h6>
+                                    <ul>
+                                        <li><a href="#">Instagram</a></li>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Twitter</a></li>
+                                    </ul>
+                                    <select name="language">
+                                        <option value="">English - En</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer__menu footer__menu--copy">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Copyright © 2023 320Estates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $('.hamburger').on('click', function() {
+                    $('.hamburger').toggleClass('hamburger--closed');
+                    $('.mainMenu').toggleClass('mainMenu--mobile-active');
+                    $('.mainMenu__bg').toggleClass('mainMenu__bg--active');
+                    $('body').toggleClass('stopScrolling');
+                });
+
+                $('.centerModeSlider').slick({
+                    centerMode: true,
+                    centerPadding: '25vw',
+                    slidesToShow: 1,
+                    infinite: false,
+                    dots: false,
+                    arrows: false,
+                    initialSlide: 0,
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                centerPadding: '15vw'
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                initialSlide: 0,
+                                centerPadding: '20px'
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+    </body>
+</html>
