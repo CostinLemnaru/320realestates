@@ -208,6 +208,11 @@
 .section--center {
     text-align: center;
 }
+.section--image {
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+}
 .section__title {
     font-family: 'Leotaro Free', sans-serif;
     font-size: 50px;
@@ -452,6 +457,59 @@
 .section__table tr svg {
     width: 15%;
 }
+.accordion {
+    padding: 0 4vw;
+}
+.accordion a {
+    font-family: 'Leotaro Free', sans-serif;
+}
+.accordion .card {
+    border: none;
+    margin: 0;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+.accordion .card-header a,
+.accordion .card-header {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.accordion .card-header a {
+    font-size: 25px;
+    color: #888374;
+    display: block;
+    text-align: left;
+    z-index: 2;
+    position: relative;
+}
+.accordion .card-body {
+    font-size: 16px;
+    color: #888374;
+    padding: 0;
+    padding-right: 25%;
+}
+.card:has(> .collapse.show) {
+    background-color: #F5F5F5;
+    transition: all 0.2s ease;
+}
+.card::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    color: #8F90A6;
+    position: absolute;
+    right: 0;
+    top: 14px;
+    width: 70px;
+    font-size: 19px;
+    text-align: left;
+}
+.card:has(> .collapse.show)::after {
+    transform: rotate(180deg);
+    text-align: right;
+    bottom: 40%;
+    right: 1px;
+}
 .articleInfo {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -580,8 +638,33 @@
 .mainMenu__logo-wrap {
     background-color: #e5e1d5;
     border-radius: 100%;
-    padding: 45px 0 15px;
+    padding: 45px 0 20px;
     margin-top: -32px;
+}
+.statistic__value {
+    color: #E0C389;
+    font-size: 45px;
+    font-family: 'Leotaro Free', sans-serif;
+}
+.statistic__title {
+    font-family: 'Leotaro Free', sans-serif;
+    color: #88837480;
+    font-size: 24px;
+}
+.statistic__text {
+    font-size: 14px;
+    color: #888374;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.section blockquote {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #888374;
+    padding-left: 40px;
 }
 
 @media (max-width: 1200px) {
