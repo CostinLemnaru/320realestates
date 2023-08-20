@@ -216,6 +216,12 @@
     background-position: center;
     height: 40vw;
 }
+.section--image-small {
+    height: 30vw;
+}
+.section--override-down {
+    margin-bottom: -200px;
+}
 .section__title {
     font-family: 'Leotaro Free', sans-serif;
     font-size: 50px;
@@ -944,6 +950,18 @@
 }
 .iframe--6 {
     height: 360px;
+}
+.downloadBox {
+    border: 1px solid #E5E1D5;
+    padding: 40px;
+}
+.downloadBox__image {
+    background-size: cover;
+    padding: 40px;
+}
+.downloadBox__text {
+    font-family: 'Leotaro Free', sans-serif;
+    color: #FFF;
 }
 
 @media (max-width: 1400px) {
