@@ -1,0 +1,919 @@
+<html>
+    <head>
+        <title>320 Real Estates</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script>
+            $(function() {
+              $("#videoTabs").tabs();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="head head--solid">
+            <div class="container">
+                <div class="row mainMenu">
+                    <div class="mainMenu__bg"></div>
+                    <div class="col-12 col-md-6 col-lg-5 order-3 order-md-2 order-lg-1 mainMenu__left">
+                        <ul>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Properties</a></li>
+                            <li><a href="#">Honest View</a></li>
+                            <li><a href="#">Golden Visa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 col-sm-4 col-md-1 col-lg-2 order-1 order-md-1 order-lg-2 mainMenu__logo">
+                        <div class="mainMenu__logo-wrap">
+                            <a href="/">
+                                <img src="assets/logo-second.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-5 order-4 order-md-3 order-lg-3 mainMenu__right">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#" class="focused">My Account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 d-block d-md-none order-2">
+                        <button class="hamburger hamburger--closed">
+                            <i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section--center">
+            <div class="centerModeSlider centerModeSlider--inlineheight mt-5">
+                <div class="centerModeSlide">
+                    <div class="centerModeSlide__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');">
+                        <div class="headShaddow headShaddow--reversed"></div>
+                        <div class="centerModeSlide__text">
+                            <p class="centerModeSlide__price">890,000 EUR</p>
+                            <p class="centerModeSlide__location">BAHIA DE MARBELLA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerModeSlide">
+                    <div class="centerModeSlide__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');">
+                        <div class="headShaddow headShaddow--reversed"></div>
+                        <div class="centerModeSlide__text">
+                            <p class="centerModeSlide__price">890,000 EUR</p>
+                            <p class="centerModeSlide__location">BAHIA DE MARBELLA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerModeSlide">
+                    <div class="centerModeSlide__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');">
+                        <div class="headShaddow headShaddow--reversed"></div>
+                        <div class="centerModeSlide__text">
+                            <p class="centerModeSlide__price">890,000 EUR</p>
+                            <p class="centerModeSlide__location">BAHIA DE MARBELLA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section--no-padding">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-8">
+                        <h1 class="section__title mb-0">Awesome apartment</h1>
+                        <p class="section__text">Lugar Urbanización Carolina Park, 2, 29602 Marbella, Málaga, Spain</p>
+                    </div>
+                    <div class="col-4 section__right mt-5">
+                        <p class="d-inline-block mb-0">
+                            <span class="section__price">390.000 €</span>
+                            <a href="#" class="btnIcon d-inline-block">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_6_5347)">
+                                    <path d="M7.39958 11.1873H5.83473V8.53269C5.83473 8.3219 5.66521 8.15063 5.45656 8.15063H2.25733C2.04868 8.15063 1.87916 8.3219 1.87916 8.53269V11.1873H0.314314C0.0643735 11.1873 -0.0638568 11.4904 0.107841 11.6726L3.65047 15.4361C3.76349 15.5547 3.9504 15.5547 4.06342 15.4361L7.60605 11.6726C7.77775 11.4904 7.64952 11.1873 7.39958 11.1873Z" fill="#BF2025"/>
+                                    <path d="M5.92855 4.57816H8.3997C8.58009 4.57816 8.72571 4.43104 8.72571 4.24879C8.72571 4.06655 8.58009 3.91943 8.3997 3.91943H5.92855C5.74816 3.91943 5.60254 4.06655 5.60254 4.24879C5.60254 4.43104 5.74816 4.57816 5.92855 4.57816Z" fill="#888374"/>
+                                    <path d="M5.92855 6.24027H8.3997C8.58009 6.24027 8.72571 6.09315 8.72571 5.9109C8.72571 5.72866 8.58009 5.58154 8.3997 5.58154H5.92855C5.74816 5.58154 5.60254 5.72866 5.60254 5.9109C5.60254 6.09315 5.74816 6.24027 5.92855 6.24027Z" fill="#888374"/>
+                                    <path d="M15.6673 6.34348C15.6673 6.27322 15.6478 6.20076 15.6021 6.14367L15.5022 6.00973C15.5022 6.00973 15.4891 5.99216 15.4826 5.98558L10.6729 0.792651C10.612 0.726779 10.5251 0.687256 10.4338 0.687256H10.3599H5.13074C4.31572 0.687256 3.65283 1.35696 3.65283 2.18256V7.27448H4.30485V2.18256C4.30485 1.72145 4.6765 1.34598 5.13074 1.34598H10.0339V5.17755C10.0339 6.00095 10.6968 6.67284 11.514 6.67284H15.0175V14.1208C15.0175 14.5819 14.6459 14.9574 14.1894 14.9574H5.71321L5.40241 15.2867L5.09379 15.6139C5.10683 15.6139 5.1177 15.6139 5.12857 15.6139H14.1873C15.0023 15.6139 15.6673 14.9442 15.6673 14.1186V6.34348ZM11.514 6.01412C11.0576 6.01412 10.6859 5.63865 10.6859 5.17755V1.77195L14.6133 6.01412H11.5118H11.514Z" fill="#888374"/>
+                                    <path d="M13.2873 8.44043H8.34505C8.16466 8.44043 8.01904 8.58754 8.01904 8.76979C8.01904 8.95204 8.16466 9.09915 8.34505 9.09915H13.2873C13.4677 9.09915 13.6134 8.95204 13.6134 8.76979C13.6134 8.58754 13.4677 8.44043 13.2873 8.44043Z" fill="#888374"/>
+                                    <path d="M13.2874 10.2146H9.32747C9.14708 10.2146 9.00146 10.3617 9.00146 10.544C9.00146 10.7262 9.14708 10.8733 9.32747 10.8733H13.2874C13.4678 10.8733 13.6134 10.7262 13.6134 10.544C13.6134 10.3617 13.4678 10.2146 13.2874 10.2146Z" fill="#888374"/>
+                                    <path d="M13.2874 11.8789H8.77327C8.59288 11.8789 8.44727 12.026 8.44727 12.2083C8.44727 12.3905 8.59288 12.5376 8.77327 12.5376H13.2874C13.4678 12.5376 13.6134 12.3905 13.6134 12.2083C13.6134 12.026 13.4678 11.8789 13.2874 11.8789Z" fill="#888374"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_6_5347">
+                                    <rect width="15.6397" height="14.9288" fill="white" transform="translate(0.0297852 0.687256)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#" class="btnIcon d-inline-block">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8214 1.9997C12.1228 1.24876 11.1438 0.821487 10.1181 0.819903C9.09164 0.821091 8.11165 1.24814 7.41193 1.99922L7.17346 2.25121L6.93499 1.99922C5.54656 0.504893 3.2096 0.419076 1.7153 1.8075C1.64909 1.86905 1.58514 1.93297 1.52359 1.99922C0.0507312 3.58787 0.0507312 6.04307 1.52359 7.63172L6.82301 13.2203C7.00635 13.4139 7.31189 13.4221 7.50544 13.2388C7.51178 13.2328 7.51794 13.2266 7.52394 13.2203L12.8214 7.63172C14.2942 6.04324 14.2942 3.58818 12.8214 1.9997ZM12.1229 6.967H12.1224L7.17346 12.1868L2.22404 6.967C1.09886 5.75312 1.09886 3.87734 2.22404 2.66346C3.24583 1.55599 4.97198 1.48655 6.07945 2.50835C6.13322 2.55796 6.18496 2.60969 6.23457 2.66346L6.82301 3.28426C7.01693 3.47694 7.33002 3.47694 7.52394 3.28426L8.11238 2.66394C9.13418 1.55647 10.8603 1.48703 11.9678 2.50883C12.0216 2.55844 12.0733 2.61017 12.1229 2.66394C13.2579 3.87975 13.2662 5.75894 12.1229 6.967Z" fill="#E1BC78"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="btnIcon d-inline-block">
+                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2.93884" cy="7.2179" r="1.63269" stroke="#888374"/>
+                                    <path d="M4.71484 8.28418L8.26933 10.4169" stroke="#888374"/>
+                                    <circle cx="10.0477" cy="2.95252" r="1.63269" stroke="#888374"/>
+                                    <circle cx="10.0477" cy="11.4833" r="1.63269" stroke="#888374"/>
+                                    <path d="M4.71484 6.50692L8.62478 3.66333" stroke="#888374"/>
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="row">
+                            <div class="col-12 undersection mb-5">
+                                <h5 class="undersection__title mb-4">Overview</h5>
+                                <div class="undersection__content row">
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 undersection mb-5">
+                                <h5 class="undersection__title mb-4">Property Attachments</h5>
+                                <div class="undersection__content">
+                                    <a href="#" class="btnIcon btnIcon--big d-inline-block">
+                                        <div class="d-inline-block">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_6_5347)">
+                                                <path d="M7.39958 11.1873H5.83473V8.53269C5.83473 8.3219 5.66521 8.15063 5.45656 8.15063H2.25733C2.04868 8.15063 1.87916 8.3219 1.87916 8.53269V11.1873H0.314314C0.0643735 11.1873 -0.0638568 11.4904 0.107841 11.6726L3.65047 15.4361C3.76349 15.5547 3.9504 15.5547 4.06342 15.4361L7.60605 11.6726C7.77775 11.4904 7.64952 11.1873 7.39958 11.1873Z" fill="#BF2025"/>
+                                                <path d="M5.92855 4.57816H8.3997C8.58009 4.57816 8.72571 4.43104 8.72571 4.24879C8.72571 4.06655 8.58009 3.91943 8.3997 3.91943H5.92855C5.74816 3.91943 5.60254 4.06655 5.60254 4.24879C5.60254 4.43104 5.74816 4.57816 5.92855 4.57816Z" fill="#888374"/>
+                                                <path d="M5.92855 6.24027H8.3997C8.58009 6.24027 8.72571 6.09315 8.72571 5.9109C8.72571 5.72866 8.58009 5.58154 8.3997 5.58154H5.92855C5.74816 5.58154 5.60254 5.72866 5.60254 5.9109C5.60254 6.09315 5.74816 6.24027 5.92855 6.24027Z" fill="#888374"/>
+                                                <path d="M15.6673 6.34348C15.6673 6.27322 15.6478 6.20076 15.6021 6.14367L15.5022 6.00973C15.5022 6.00973 15.4891 5.99216 15.4826 5.98558L10.6729 0.792651C10.612 0.726779 10.5251 0.687256 10.4338 0.687256H10.3599H5.13074C4.31572 0.687256 3.65283 1.35696 3.65283 2.18256V7.27448H4.30485V2.18256C4.30485 1.72145 4.6765 1.34598 5.13074 1.34598H10.0339V5.17755C10.0339 6.00095 10.6968 6.67284 11.514 6.67284H15.0175V14.1208C15.0175 14.5819 14.6459 14.9574 14.1894 14.9574H5.71321L5.40241 15.2867L5.09379 15.6139C5.10683 15.6139 5.1177 15.6139 5.12857 15.6139H14.1873C15.0023 15.6139 15.6673 14.9442 15.6673 14.1186V6.34348ZM11.514 6.01412C11.0576 6.01412 10.6859 5.63865 10.6859 5.17755V1.77195L14.6133 6.01412H11.5118H11.514Z" fill="#888374"/>
+                                                <path d="M13.2873 8.44043H8.34505C8.16466 8.44043 8.01904 8.58754 8.01904 8.76979C8.01904 8.95204 8.16466 9.09915 8.34505 9.09915H13.2873C13.4677 9.09915 13.6134 8.95204 13.6134 8.76979C13.6134 8.58754 13.4677 8.44043 13.2873 8.44043Z" fill="#888374"/>
+                                                <path d="M13.2874 10.2146H9.32747C9.14708 10.2146 9.00146 10.3617 9.00146 10.544C9.00146 10.7262 9.14708 10.8733 9.32747 10.8733H13.2874C13.4678 10.8733 13.6134 10.7262 13.6134 10.544C13.6134 10.3617 13.4678 10.2146 13.2874 10.2146Z" fill="#888374"/>
+                                                <path d="M13.2874 11.8789H8.77327C8.59288 11.8789 8.44727 12.026 8.44727 12.2083C8.44727 12.3905 8.59288 12.5376 8.77327 12.5376H13.2874C13.4678 12.5376 13.6134 12.3905 13.6134 12.2083C13.6134 12.026 13.4678 11.8789 13.2874 11.8789Z" fill="#888374"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_6_5347">
+                                                <rect width="15.6397" height="14.9288" fill="white" transform="translate(0.0297852 0.687256)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <span class="d-inline-block">download window card</span>
+                                    </a>
+
+                                    <a href="#" class="btnIcon btnIcon--big d-inline-block">
+                                        <div class="d-inline-block">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.8214 1.9997C12.1228 1.24876 11.1438 0.821487 10.1181 0.819903C9.09164 0.821091 8.11165 1.24814 7.41193 1.99922L7.17346 2.25121L6.93499 1.99922C5.54656 0.504893 3.2096 0.419076 1.7153 1.8075C1.64909 1.86905 1.58514 1.93297 1.52359 1.99922C0.0507312 3.58787 0.0507312 6.04307 1.52359 7.63172L6.82301 13.2203C7.00635 13.4139 7.31189 13.4221 7.50544 13.2388C7.51178 13.2328 7.51794 13.2266 7.52394 13.2203L12.8214 7.63172C14.2942 6.04324 14.2942 3.58818 12.8214 1.9997ZM12.1229 6.967H12.1224L7.17346 12.1868L2.22404 6.967C1.09886 5.75312 1.09886 3.87734 2.22404 2.66346C3.24583 1.55599 4.97198 1.48655 6.07945 2.50835C6.13322 2.55796 6.18496 2.60969 6.23457 2.66346L6.82301 3.28426C7.01693 3.47694 7.33002 3.47694 7.52394 3.28426L8.11238 2.66394C9.13418 1.55647 10.8603 1.48703 11.9678 2.50883C12.0216 2.55844 12.0733 2.61017 12.1229 2.66394C13.2579 3.87975 13.2662 5.75894 12.1229 6.967Z" fill="#E1BC78"/>
+                                            </svg>
+                                        </div>
+                                        <span class="d-inline-block">add to favorite</span>
+                                    </a>
+                                    <a href="#" class="btnIcon btnIcon--big d-inline-block">
+                                        <div class="d-inline-block">
+                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="2.93884" cy="7.2179" r="1.63269" stroke="#888374"/>
+                                                <path d="M4.71484 8.28418L8.26933 10.4169" stroke="#888374"/>
+                                                <circle cx="10.0477" cy="2.95252" r="1.63269" stroke="#888374"/>
+                                                <circle cx="10.0477" cy="11.4833" r="1.63269" stroke="#888374"/>
+                                                <path d="M4.71484 6.50692L8.62478 3.66333" stroke="#888374"/>
+                                            </svg>
+                                        </div>
+                                        <span class="d-inline-block">share</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 undersection mb-5">
+                                <h5 class="undersection__title mb-4">Property Description</h5>
+                                <div class="undersection__content">
+                                    <p class="undersection__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 undersection mb-5">
+                                <h5 class="undersection__title mb-4">Property Details</h5>
+                                <div class="undersection__content">
+                                    <div class="row g-0">
+                                        <table class="unborderedTable col-12 col-md-5">
+                                            <tr>
+                                                <td><b>Property ID</b></td>
+                                                <td>RT 48</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Property ID</b></td>
+                                                <td>RT 48</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Property ID</b></td>
+                                                <td>RT 48</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Property ID</b></td>
+                                                <td>RT 48</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Property ID</b></td>
+                                                <td>RT 48</td>
+                                            </tr>
+                                        </table>
+                                        <table class="unborderedTable col-12 offset-md-1 col-md-5">
+                                            <tr>
+                                                <td><b>Property ID</b></td>
+                                                <td>RT 48</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Property ID</b></td>
+                                                <td>RT 48</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Property ID</b></td>
+                                                <td>RT 48</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Property ID</b></td>
+                                                <td>RT 48</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Property ID</b></td>
+                                                <td>RT 48</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 undersection mb-5">
+                                <h5 class="undersection__title">Property features</h5>
+                                <div class="undersection__content">
+                                    <div class="row g-0">
+                                        <table class="unborderedTable unborderedTable--bordered col-12 col-md-5">
+                                            <tr>
+                                                <td>
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_6_5616)">
+                                                        <path d="M11.1519 6.70398H20.7421V8.5794L24.5782 5.76627L20.7421 3.422V5.29742" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M5.39754 9.51709V19.8319H3.47949L6.35656 23.5827L8.75412 19.8319H6.83607" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M7.65137 9.40454L12.926 18.3362L11.2669 19.2739L15.6784 21.1165L15.8366 16.6952L14.1775 17.6329" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M9.52148 8.43872L18.6562 13.5961L17.6972 15.2184L22.4587 14.6557L20.3345 10.7502L19.3755 12.3724" stroke="#505050" stroke-miterlimit="10"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_6_5616">
+                                                        <rect width="22" height="21" fill="white" transform="translate(3 3)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </td>
+                                                <td><b>Property ID</b></td>
+                                                <td><b>RT 48</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_6_5616)">
+                                                        <path d="M11.1519 6.70398H20.7421V8.5794L24.5782 5.76627L20.7421 3.422V5.29742" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M5.39754 9.51709V19.8319H3.47949L6.35656 23.5827L8.75412 19.8319H6.83607" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M7.65137 9.40454L12.926 18.3362L11.2669 19.2739L15.6784 21.1165L15.8366 16.6952L14.1775 17.6329" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M9.52148 8.43872L18.6562 13.5961L17.6972 15.2184L22.4587 14.6557L20.3345 10.7502L19.3755 12.3724" stroke="#505050" stroke-miterlimit="10"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_6_5616">
+                                                        <rect width="22" height="21" fill="white" transform="translate(3 3)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </td>
+                                                <td><b>Property ID</b></td>
+                                                <td><b>RT 48</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_6_5616)">
+                                                        <path d="M11.1519 6.70398H20.7421V8.5794L24.5782 5.76627L20.7421 3.422V5.29742" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M5.39754 9.51709V19.8319H3.47949L6.35656 23.5827L8.75412 19.8319H6.83607" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M7.65137 9.40454L12.926 18.3362L11.2669 19.2739L15.6784 21.1165L15.8366 16.6952L14.1775 17.6329" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M9.52148 8.43872L18.6562 13.5961L17.6972 15.2184L22.4587 14.6557L20.3345 10.7502L19.3755 12.3724" stroke="#505050" stroke-miterlimit="10"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_6_5616">
+                                                        <rect width="22" height="21" fill="white" transform="translate(3 3)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </td>
+                                                <td><b>Property ID</b></td>
+                                                <td><b>RT 48</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_6_5616)">
+                                                        <path d="M11.1519 6.70398H20.7421V8.5794L24.5782 5.76627L20.7421 3.422V5.29742" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M5.39754 9.51709V19.8319H3.47949L6.35656 23.5827L8.75412 19.8319H6.83607" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M7.65137 9.40454L12.926 18.3362L11.2669 19.2739L15.6784 21.1165L15.8366 16.6952L14.1775 17.6329" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M9.52148 8.43872L18.6562 13.5961L17.6972 15.2184L22.4587 14.6557L20.3345 10.7502L19.3755 12.3724" stroke="#505050" stroke-miterlimit="10"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_6_5616">
+                                                        <rect width="22" height="21" fill="white" transform="translate(3 3)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </td>
+                                                <td><b>Property ID</b></td>
+                                                <td><b>RT 48</b></td>
+                                            </tr>
+                                        </table>
+                                        <table class="unborderedTable unborderedTable--bordered col-12 offset-md-1 col-md-5">
+                                            <tr>
+                                                <td>
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_6_5616)">
+                                                        <path d="M11.1519 6.70398H20.7421V8.5794L24.5782 5.76627L20.7421 3.422V5.29742" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M5.39754 9.51709V19.8319H3.47949L6.35656 23.5827L8.75412 19.8319H6.83607" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M7.65137 9.40454L12.926 18.3362L11.2669 19.2739L15.6784 21.1165L15.8366 16.6952L14.1775 17.6329" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M9.52148 8.43872L18.6562 13.5961L17.6972 15.2184L22.4587 14.6557L20.3345 10.7502L19.3755 12.3724" stroke="#505050" stroke-miterlimit="10"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_6_5616">
+                                                        <rect width="22" height="21" fill="white" transform="translate(3 3)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </td>
+                                                <td><b>Property ID</b></td>
+                                                <td><b>RT 48</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_6_5616)">
+                                                        <path d="M11.1519 6.70398H20.7421V8.5794L24.5782 5.76627L20.7421 3.422V5.29742" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M5.39754 9.51709V19.8319H3.47949L6.35656 23.5827L8.75412 19.8319H6.83607" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M7.65137 9.40454L12.926 18.3362L11.2669 19.2739L15.6784 21.1165L15.8366 16.6952L14.1775 17.6329" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M9.52148 8.43872L18.6562 13.5961L17.6972 15.2184L22.4587 14.6557L20.3345 10.7502L19.3755 12.3724" stroke="#505050" stroke-miterlimit="10"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_6_5616">
+                                                        <rect width="22" height="21" fill="white" transform="translate(3 3)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </td>
+                                                <td><b>Property ID</b></td>
+                                                <td><b>RT 48</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_6_5616)">
+                                                        <path d="M11.1519 6.70398H20.7421V8.5794L24.5782 5.76627L20.7421 3.422V5.29742" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M5.39754 9.51709V19.8319H3.47949L6.35656 23.5827L8.75412 19.8319H6.83607" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M7.65137 9.40454L12.926 18.3362L11.2669 19.2739L15.6784 21.1165L15.8366 16.6952L14.1775 17.6329" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M9.52148 8.43872L18.6562 13.5961L17.6972 15.2184L22.4587 14.6557L20.3345 10.7502L19.3755 12.3724" stroke="#505050" stroke-miterlimit="10"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_6_5616">
+                                                        <rect width="22" height="21" fill="white" transform="translate(3 3)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </td>
+                                                <td><b>Property ID</b></td>
+                                                <td><b>RT 48</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_6_5616)">
+                                                        <path d="M11.1519 6.70398H20.7421V8.5794L24.5782 5.76627L20.7421 3.422V5.29742" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M5.39754 9.51709V19.8319H3.47949L6.35656 23.5827L8.75412 19.8319H6.83607" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M7.65137 9.40454L12.926 18.3362L11.2669 19.2739L15.6784 21.1165L15.8366 16.6952L14.1775 17.6329" stroke="#505050" stroke-miterlimit="10"/>
+                                                        <path d="M9.52148 8.43872L18.6562 13.5961L17.6972 15.2184L22.4587 14.6557L20.3345 10.7502L19.3755 12.3724" stroke="#505050" stroke-miterlimit="10"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_6_5616">
+                                                        <rect width="22" height="21" fill="white" transform="translate(3 3)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </td>
+                                                <td><b>Property ID</b></td>
+                                                <td><b>RT 48</b></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 undersection mb-5">
+                                <h5 class="undersection__title mb-4">Property video</h5>
+                                <div class="undersection__content">
+                                    <div id="videoTabs"">
+                                        <ul class="mb-4">
+                                            <li><a href="#video">Property Video</a></li>
+                                            <li><a href="#tour">Virtual Tour</a></li>
+                                        </ul>
+                                        <div id="video">
+                                            <iframe class="iframe--6" src="https://www.youtube.com/embed/K4TOrB7at0Y" title="Demo Background Sample Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+                                        <div id="tour">
+                                            <iframe class="iframe--6" src="https://www.youtube.com/embed/lrf-GAYUOkQ" title="The Drive - 1 Hour Version - 4K 60fps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                        <div class="row">
+                            <div class="col-12 undersection mb-2">
+                                <h5 class="undersection__title mb-4">Near by</h5>
+                                <div class="undersection__content row">
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="iconInfo mb-4 d-inline-block col-4">
+                                        <div class="iconInfo__icon d-inline-block">
+                                            <i class="fa-solid fa-bed"></i>
+                                        </div>
+                                        <div class="iconInfo__text d-inline-block">
+                                            <span class="iconInfo__title d-block">Bedroom</span>
+                                            <span class="iconInfo__value d-block">3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 undersection mb-5">
+                                <div id="map"></div>
+                            </div>
+
+                            <div class="col-12 undersection">
+                                <div class="container">
+                                    <div class="row section__box section__box--vertical pt-5 pb-5">
+                                        <div class="col-12">
+                                            <h1 class="section__title mb-4">Tailor made assistance for <span style="color: black;">your unique needs</span></h1>
+                                        </div>
+                                        <div class="col-12 mt-4">
+                                            <div class="section__box-content">
+                                                <h5 class="section__box-title mt-2">Are you in a hurry? Or is your request super specific?</h5>
+                                                <p class="section__box-text mt-2">If you prefer to obtain a personalized list of custom options you can choose from before making your move just fill in the custom support form based on your wishes and let us select the most relevant and attractive locations for you!</p>
+                                                <a href="#">
+                                                    <button class="btn2 btn--big btn2--reversed mt-2">Guide Me</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container-fluid footer__form mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-12 mb-5 mb-md-0">
+                                    <h1 class="section__title mb-2">Did You Find<br>Your <span style="color: black;">Dream<br>Home?</span></h1>
+                                    <p class="footer__info">Contact an expert today!</p>
+                                    <p class="footer__info">We always aim to reply within 24 hours.</p>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <form action="/" method="post" id="contact" class="row">
+                                        <div class="col-12 col-md-6">
+                                            <input type="text" name="name" placeholder="Your Name">
+                                            <input type="text" name="phone" placeholder="Phone Number">
+                                            <input type="text" name="message" placeholder="Message">
+                                            <button class="btn2 btn2--dark btn2--small d-md-block d-none">Submit</button>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <input type="email" name="email" placeholder="Your Email">
+                                            <select name="interested">
+                                                <option value="">Interested in</option>
+                                            </select>
+                                            <button class="btn2 btn2--dark btn2--small d-block d-md-none">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer__menu">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <img src="assets/logo.png" alt="320RealEstates" class="footer__logo">
+                                </div>
+                                <div class="col-2 d-md-block d-none footer__column">
+                                    <h6>Properties</h6>
+                                    <ul>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 d-md-block d-none footer__column">
+                                    <h6>About us</h6>
+                                    <ul>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 d-md-block d-none footer__column">
+                                    <h6>Contact us</h6>
+                                    <ul>
+                                        <li>Urb. Monte Paraiso Country Club, 4/2, 29602 Marbella</li>
+                                        <li>Teléfono:</li>
+                                        <li>+34658540533</li>
+                                        <li>+34658540533</li>
+                                        <li></li>
+                                        <li>hola@320estates.com</li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 d-md-block d-none footer__column footer__column--social">
+                                    <h6>Follow us</h6>
+                                    <ul>
+                                        <li><a href="#">Instagram</a></li>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Twitter</a></li>
+                                    </ul>
+                                    <select name="language">
+                                        <option value="">English - En</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer__menu footer__menu--copy">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Copyright © 2023 320Estates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+              key: "AIzaSyDZaW-9DLhgT7F-a_mll_9CuPynlej9nHU",
+              v: "weekly",
+              // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+              // Add other bootstrap parameters as needed, using camel case.
+            });
+          </script>
+        <script>
+            $(document).ready(function(){
+                $('.hamburger').on('click', function() {
+                    $('.hamburger').toggleClass('hamburger--closed');
+                    $('.mainMenu').toggleClass('mainMenu--mobile-active');
+                    $('.mainMenu__bg').toggleClass('mainMenu__bg--active');
+                    $('body').toggleClass('stopScrolling');
+                });
+
+                $('.centerModeSlider').slick({
+                    centerMode: true,
+                    centerPadding: '25vw',
+                    slidesToShow: 1,
+                    infinite: false,
+                    dots: false,
+                    arrows: false,
+                    initialSlide: 1,
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                centerPadding: '15vw'
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                centerPadding: '20px'
+                            }
+                        }
+                    ]
+                });
+                let map;
+
+                async function initMap() {
+                    const { Map } = await google.maps.importLibrary("maps");
+                    var style = [
+                        {
+                            "featureType": "water",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#d3d3d3"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "stylers": [
+                                {
+                                    "color": "#808080"
+                                },
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                },
+                                {
+                                    "color": "#b3b3b3"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                },
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "weight": 1.8
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#d7d7d7"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                },
+                                {
+                                    "color": "#ebebeb"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#a7a7a7"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                },
+                                {
+                                    "color": "#efefef"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#696969"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                },
+                                {
+                                    "color": "#737373"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "labels",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#d6d6d6"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {},
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#dadada"
+                                }
+                            ]
+                        }
+                    ]; 
+
+                    map = new Map(document.getElementById("map"), {
+                        center: { lat: -34.397, lng: 150.644 },
+                        zoom: 8,
+                        styles: style
+                    });
+                }
+
+                initMap();
+            });
+        </script>
+    </body>
+</html>
