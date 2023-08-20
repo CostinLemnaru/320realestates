@@ -1,0 +1,423 @@
+<html>
+    <head>
+        <title>320 Real Estates</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </head>
+    <body>
+        <div class="head" style="background-image: url('assets/shutterstock_278455016.png')">
+            <div class="headShaddow"></div>
+            <div class="container">
+                <div class="row mainMenu">
+                    <div class="mainMenu__bg"></div>
+                    <div class="col-12 col-md-6 col-lg-5 order-3 order-md-2 order-lg-1 mainMenu__left">
+                        <ul>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Properties</a></li>
+                            <li><a href="#">Honest View</a></li>
+                            <li><a href="#">Golden Visa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-md-1 col-lg-2 order-1 order-md-1 order-lg-2 mainMenu__logo">
+                        <a href="/">
+                            <img src="assets/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-5 order-4 order-md-3 order-lg-3 mainMenu__right">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#" class="focused">My Account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 d-block d-md-none order-2">
+                        <button class="hamburger hamburger--closed">
+                            <i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="mainTitle mainTitle--center">
+                            <h1 class="mb-5">Tailor Made<br>Assistance</h1>
+                            <h1 style="font-size: 24px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form action="/" id="contact">
+
+            <div class="section section--no-padding section--down-shadow">
+                <div class="container">
+                    <div class="underheadInputs">
+                        <label class="underheadInputs__label d-inline-block">
+                            <input type="radio" checked name="service" class="underheadInputs__radio">
+                            <span>Buy</span>
+                        </label>
+                        <label class="underheadInputs__label d-inline-block">
+                            <input type="radio" name="service" class="underheadInputs__radio">
+                            <span>Rent</span>
+                        </label>
+                        <label class="underheadInputs__label d-inline-block">
+                            <input type="radio" name="service" class="underheadInputs__radio">
+                            <span>Invest</span>
+                        </label>
+                        <label class="underheadInputs__label underheadInputs__label--select d-inline-block">
+                            <select name="type" id="" class="underheadInputs__select">
+                                <option value="">Property type</option>
+                            </select>
+                        </label>
+                        <label class="underheadInputs__label underheadInputs__label--select d-inline-block">
+                            <select name="type" id="" class="underheadInputs__select">
+                                <option value="">Beds</option>
+                            </select>
+                        </label>
+                        <label class="underheadInputs__label underheadInputs__label--select d-inline-block">
+                            <select name="type" id="" class="underheadInputs__select">
+                                <option value="">Baths</option>
+                            </select>
+                        </label>
+                        <label class="underheadInputs__label underheadInputs__label--select d-inline-block">
+                            <select name="type" id="" class="underheadInputs__select">
+                                <option value="">Min Price</option>
+                            </select>
+                        </label>
+                        <label class="underheadInputs__label underheadInputs__label--select d-inline-block">
+                            <select name="type" id="" class="underheadInputs__select">
+                                <option value="">Max Price</option>
+                            </select>
+                        </label>
+                        <label class="underheadInputs__label underheadInputs__label--select d-inline-block">
+                            <select name="type" id="" class="underheadInputs__select">
+                                <option value="">Min Sqm</option>
+                            </select>
+                        </label>
+                        <label class="underheadInputs__label underheadInputs__label--select d-inline-block">
+                            <select name="type" id="" class="underheadInputs__select">
+                                <option value="">Max Sqm</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section underheadInputs__wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <h1 class="section__title">Please share with us why</h1>
+                            <label class="underheadInputs__label d-inline-block mb-3">
+                                <input type="radio" checked name="why" class="underheadInputs__radio underheadInputs__radio--gray">
+                                <span>I am moving over</span>
+                            </label>
+                            <label class="underheadInputs__label d-inline-block mb-3">
+                                <input type="radio" name="why" class="underheadInputs__radio underheadInputs__radio--gray">
+                                <span>I am retiring</span>
+                            </label>
+                            <label class="underheadInputs__label d-inline-block mb-3">
+                                <input type="radio" name="why" class="underheadInputs__radio underheadInputs__radio--gray">
+                                <span>I want to invest</span>
+                            </label>
+                            <label class="underheadInputs__label d-inline-block mb-3 w-50">
+                                <input type="radio" name="why" class="underheadInputs__radio underheadInputs__radio--gray">
+                                <span>I want to buy a holiday house</span>
+                            </label>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <h1 class="section__title">I want to buy a holiday house</h1>
+                            <label class="underheadInputs__label d-inline-block mb-3 w-50">
+                                <input type="radio" checked name="why" class="underheadInputs__radio underheadInputs__radio--gray">
+                                <span>I have school age children</span>
+                            </label>
+                            <label class="underheadInputs__label d-inline-block mb-3 w-50">
+                                <input type="radio" name="why" class="underheadInputs__radio underheadInputs__radio--gray">
+                                <span>i prefer quiet locations</span>
+                            </label>
+                            <label class="underheadInputs__label d-inline-block mb-3">
+                                <input type="radio" name="why" class="underheadInputs__radio underheadInputs__radio--gray">
+                                <span>I love the beach</span>
+                            </label>
+                            <label class="underheadInputs__label d-inline-block mb-3">
+                                <input type="radio" name="why" class="underheadInputs__radio underheadInputs__radio--gray">
+                                <span>I play golf</span>
+                            </label>
+                            <label class="underheadInputs__label d-inline-block mb-3">
+                                <input type="radio" name="why" class="underheadInputs__radio underheadInputs__radio--gray">
+                                <span>I prefer Re-sales</span>
+                            </label>
+                            <label class="underheadInputs__label d-inline-block mb-3 w-50">
+                                <input type="radio" name="why" class="underheadInputs__radio underheadInputs__radio--gray">
+                                <span>I prefer New Developments</span>
+                            </label>
+                            <label class="underheadInputs__label d-inline-block mb-3 w-50">
+                                <input type="radio" name="why" class="underheadInputs__radio underheadInputs__radio--gray">
+                                <span>I welcome the challenge of refurbishment projects</span>
+                            </label>
+                        </div>
+                        <div class="col-12">
+                            <h1 class="section__title">Please input your mail and phone</h1>
+                            <input type="text" name="mail" placeholder="Your Mail" class="underheadInputs__input d-inline-block">
+                            <input type="text" name="mail" placeholder="Your phone number" class="underheadInputs__input d-inline-block">
+                            <button class="btn2 btn2--dark btn2--small d-md-block mt-4">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="section section--center">
+            <div class="container">
+                <div class="row section__box pt-5 pb-5">
+                    <div class="col-12 col-md-4 offset-md-1">
+                        <h1 class="section__title mt-5 mb-5">Get your insight!</h1>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="section__box-content">
+                            <h5 class="section__box-title mt-2"><span style="color: #E1BC78;">Create your account and let us know on what properties we can provide</span> more in-depth information and details to support your decision!</h5>
+                            <a href="#">
+                                <button class="btn2 btn2--reversed mt-2">Create account</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section section--center section--boxed section--gray section--no-padding pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section__title">Articles & tips</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__box section__box--square row">
+                            <div class="col-md-6 col-lg-5 col-12 section__image" style="background-image: url('assets/image.png');"></div>
+                            <div class="col-md-6 col-lg-7 col-12 section__content">
+                                <div class="articleInfo mb-4">
+                                    <a href="#" class="articleInfo__category">Categorie</a>
+                                    <span class="articleInfo__readTime">5 min read</span>
+                                </div>
+                                <h1 class="section__title mb-3">Lorem Ipsum dolor sit amet</h1>
+                                <p class="section__text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                                <a href="#">
+                                    <button class="btn2 btn2--small">Read More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section--no-padding section--gray pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="article article--blog mb-4">
+                            <div class="article__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');"></div>
+                            <div class="article__content">
+                                <div class="articleInfo mb-3">
+                                    <a href="#" class="articleInfo__category">Categorie</a>
+                                    <span class="articleInfo__readTime">5 min read</span>
+                                </div>
+                                <h4 class="article__title mb-1">Duis aute irure dolor in reprehenderit</h4>
+                                <p class="article__text mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                                <a href="#">
+                                    <button class="article__button btn2 btn2--small">Read more</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="article article--blog mb-4">
+                            <div class="article__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');"></div>
+                            <div class="article__content">
+                                <div class="articleInfo mb-3">
+                                    <a href="#" class="articleInfo__category">Categorie</a>
+                                    <span class="articleInfo__readTime">5 min read</span>
+                                </div>
+                                <h4 class="article__title mb-1">Duis aute irure dolor in reprehenderit</h4>
+                                <p class="article__text mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                                <a href="#">
+                                    <button class="article__button btn2 btn2--small">Read more</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                        <div class="article article--blog mb-4">
+                            <div class="article__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');"></div>
+                            <div class="article__content">
+                                <div class="articleInfo mb-3">
+                                    <a href="#" class="articleInfo__category">Categorie</a>
+                                    <span class="articleInfo__readTime">5 min read</span>
+                                </div>
+                                <h4 class="article__title mb-1">Duis aute irure dolor in reprehenderit</h4>
+                                <p class="article__text mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                                <a href="#">
+                                    <button class="article__button btn2 btn2--small">Read more</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container-fluid footer__form footer__form--override">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-12 mb-5 mb-md-0">
+                                    <h1 class="section__title mb-2">Did You Find<br>Your <span style="color: black;">Dream<br>Home?</span></h1>
+                                    <p class="footer__info">Contact an expert today!</p>
+                                    <p class="footer__info">We always aim to reply within 24 hours.</p>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <form action="/" method="post" id="contact" class="row">
+                                        <div class="col-12 col-md-6">
+                                            <input type="text" name="name" placeholder="Your Name">
+                                            <input type="text" name="phone" placeholder="Phone Number">
+                                            <input type="text" name="message" placeholder="Message">
+                                            <button class="btn2 btn2--dark btn2--small d-md-block d-none">Submit</button>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <input type="email" name="email" placeholder="Your Email">
+                                            <select name="interested">
+                                                <option value="">Interested in</option>
+                                            </select>
+                                            <button class="btn2 btn2--dark btn2--small d-block d-md-none">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer__menu">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <img src="assets/logo.png" alt="320RealEstates" class="footer__logo">
+                                </div>
+                                <div class="col-2 d-md-block d-none footer__column">
+                                    <h6>Properties</h6>
+                                    <ul>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 d-md-block d-none footer__column">
+                                    <h6>About us</h6>
+                                    <ul>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                        <li><a href="#">Marbella</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 d-md-block d-none footer__column">
+                                    <h6>Contact us</h6>
+                                    <ul>
+                                        <li>Urb. Monte Paraiso Country Club, 4/2, 29602 Marbella</li>
+                                        <li>Teléfono:</li>
+                                        <li>+34658540533</li>
+                                        <li>+34658540533</li>
+                                        <li></li>
+                                        <li>hola@320estates.com</li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 d-md-block d-none footer__column footer__column--social">
+                                    <h6>Follow us</h6>
+                                    <ul>
+                                        <li><a href="#">Instagram</a></li>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Twitter</a></li>
+                                    </ul>
+                                    <select name="language">
+                                        <option value="">English - En</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer__menu footer__menu--copy">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Copyright © 2023 320Estates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $('.hamburger').on('click', function() {
+                    $('.hamburger').toggleClass('hamburger--closed');
+                    $('.mainMenu').toggleClass('mainMenu--mobile-active');
+                    $('.mainMenu__bg').toggleClass('mainMenu__bg--active');
+                    $('body').toggleClass('stopScrolling');
+                });
+
+                $('.centerModeSlider').slick({
+                    centerMode: true,
+                    centerPadding: '25vw',
+                    slidesToShow: 1,
+                    infinite: false,
+                    dots: false,
+                    arrows: false,
+                    initialSlide: 0,
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                centerPadding: '15vw'
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                initialSlide: 0,
+                                centerPadding: '20px'
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+    </body>
+</html>
