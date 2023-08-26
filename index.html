@@ -243,6 +243,7 @@
                     </div>
                 </div>
             </div>
+            <div class="centerModeSlider__dots"></div>
         </div>
 
         <div class="section section--no-padding">
@@ -1300,22 +1301,17 @@
                     centerPadding: '25vw',
                     slidesToShow: 1,
                     infinite: false,
-                    dots: false,
-                    arrows: false,
-                    initialSlide: 0,
+                    dots: true,
+                    arrows: true,
+                    initialSlide: 1,
+                    prevArrow: '<button type="button" class="slick-prev"><span><i class="fa-solid fa-chevron-left"></i></span></button>',
+                    nextArrow: '<button type="button" class="slick-next"><span><i class="fa-solid fa-chevron-right"></i></span></button>',
+                    appendDots: $('.centerModeSlider__dots'),
                     responsive: [
                         {
                             breakpoint: 991,
                             settings: {
                                 centerPadding: '15vw'
-                            }
-                        },
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 1,
-                                initialSlide: 0,
-                                centerPadding: '20px'
                             }
                         }
                     ]
