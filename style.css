@@ -945,6 +945,18 @@
     border-bottom: 1px solid #000;
     padding-bottom: 12px;
 }
+.unborderedTable td[colspan="2"] {
+    padding-right: 15px;
+}
+.unborderedTable select {
+    border: 0;
+    width: 100%;
+    font-weight: bold;
+    margin-left: -3px;
+}
+.unborderedTable select:active {
+    outline: none;
+}
 #videoTabs ul {
     margin: 0;
     padding: 0;
