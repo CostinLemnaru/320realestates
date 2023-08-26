@@ -370,6 +370,13 @@
     color: #888374;
     font-size: 24px;
 }
+.article__reference {
+    float: right;
+    color: #A6A6A6;
+    background-color: #F5F5F5;
+    padding: 5px 15px;
+    letter-spacing: 5px;
+}
 .article__wishlist {
     float: right;
     border: none;
@@ -1248,6 +1255,10 @@
     .slick-arrow {
         margin-top: 8vw;
     }
+    .article__reference {
+        padding: 5px 10px;
+        letter-spacing: 2px;
+    }
 }
 @media (max-width: 768px) {
     .mainMenu__left {
@@ -1461,5 +1472,12 @@
     .pagination__link {
         width: 20px;
         height: 20px;
+    }
+    .article__reference {
+        padding: 5px 10px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
     }
 }
