@@ -383,6 +383,9 @@
 .article__wrap {
     border: 1px solid #DEDCDA;
 }
+.imgCustomShadow {
+    filter: drop-shadow(0px 0px 15px #ffaa0025);
+}
 .btn2 {
     background-color: transparent;
     border-radius: 0;
