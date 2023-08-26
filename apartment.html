@@ -61,33 +61,15 @@
         </div>
 
         <div class="section section--center">
-            <div class="centerModeSlider centerModeSlider--inlineheight mt-5">
+            <div class="centerModeSlider centerModeSlider--second mt-0 mt-lg-5">
                 <div class="centerModeSlide">
-                    <div class="centerModeSlide__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');">
-                        <div class="headShaddow headShaddow--reversed"></div>
-                        <div class="centerModeSlide__text">
-                            <p class="centerModeSlide__price">890,000 EUR</p>
-                            <p class="centerModeSlide__location">BAHIA DE MARBELLA</p>
-                        </div>
-                    </div>
+                    <div class="centerModeSlide__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');"></div>
                 </div>
                 <div class="centerModeSlide">
-                    <div class="centerModeSlide__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');">
-                        <div class="headShaddow headShaddow--reversed"></div>
-                        <div class="centerModeSlide__text">
-                            <p class="centerModeSlide__price">890,000 EUR</p>
-                            <p class="centerModeSlide__location">BAHIA DE MARBELLA</p>
-                        </div>
-                    </div>
+                    <div class="centerModeSlide__image" style="background-image: url('assets/lissete-laverde-7OFTxbGWqwk-unsplash.jpg');"></div>
                 </div>
                 <div class="centerModeSlide">
-                    <div class="centerModeSlide__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');">
-                        <div class="headShaddow headShaddow--reversed"></div>
-                        <div class="centerModeSlide__text">
-                            <p class="centerModeSlide__price">890,000 EUR</p>
-                            <p class="centerModeSlide__location">BAHIA DE MARBELLA</p>
-                        </div>
-                    </div>
+                    <div class="centerModeSlide__image" style="background-image: url('assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg');"></div>
                 </div>
             </div>
         </div>
@@ -696,13 +678,21 @@
 
                 $('.centerModeSlider').slick({
                     centerMode: true,
-                    centerPadding: '25vw',
+                    centerPadding: '15vw',
                     slidesToShow: 1,
                     infinite: false,
                     dots: false,
-                    arrows: false,
+                    arrows: true,
+                    prevArrow: '<button type="button" class="slick-prev"><span><i class="fa-solid fa-chevron-left"></i></span></button>',
+                    nextArrow: '<button type="button" class="slick-next"><span><i class="fa-solid fa-chevron-right"></i></span></button>',
                     initialSlide: 1,
                     responsive: [
+                        {
+                            breakpoint: 1440,
+                            settings: {
+                                centerPadding: '10vw'
+                            }
+                        },
                         {
                             breakpoint: 991,
                             settings: {
