@@ -1086,9 +1086,6 @@
 .underheadInputs__wrap .underheadInputs__label:last-child {
     margin-right: 0;
 }
-.underheadInputs__wrap .underheadInputs__label {
-    width: 23%;
-}
 .underheadInputs__input {
     height: 53px;
     text-align: center;
