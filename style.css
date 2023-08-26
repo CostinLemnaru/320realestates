@@ -507,6 +507,9 @@
 .section__box--square .section__title {
     font-size: 40px;
 }
+.section__box--shadow {
+    filter: drop-shadow(0px 5px 15px #00000020);
+}
 .section__table tr svg,
 .section__table tr p {
     display: inline-block;
